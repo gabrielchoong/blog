@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | Gabriel</title>
-    <link rel="stylesheet" href="{{"/css/style.css" | relURL}}">
+    <link rel="stylesheet" href="{{"css/style.css" | absURL }}">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/" class="brand">gabriel@blog:~/dev/blog$ </a> <span>ls -l {{ .Title }}/</span>
+            <a href="{{ "" | absURL }}" class="brand">gabriel@blog:~/dev/blog$ </a> <span>ls -l {{ .Title }}/</span>
         </nav>
     </header>
 
