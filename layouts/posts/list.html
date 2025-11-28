@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <section class="posts">
+    <br />
+    <ul class="file-list">
+      {{ range (where .Site.RegularPages "Section" "posts") }}
+        <li>
+          <span class="permissions">-rw-r--r--</span>
+          <span class="date">{{ .Date.Format "Jan 02" }}</span>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

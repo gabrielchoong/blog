@@ -8,9 +8,14 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="{{ "" | absURL }}" class="brand">gabriel@blog:~/dev/blog$ </a> <span>ls -l {{ .Title }}/</span>
-        </nav>
+      <nav>
+        {{ block "prompt" . }}
+          <span>~/dev/blog$</span>
+          <a href="{{ "" | absURL }}" class="brand">
+            <span style="color: var(--accent);">whoami</span>
+          </a>
+        {{ end }}
+      </nav>
     </header>
 
     <main>
