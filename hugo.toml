@@ -2,6 +2,8 @@ baseURL = "https://gabrielchoong.github.io/blog/"
 languageCode = 'en-us'
 title = 'blog'
 
+ignoreFiles = ["templates?/", "^README\\.md$"]
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
