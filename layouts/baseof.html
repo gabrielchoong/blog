@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Title }} | Gabriel</title>
-    <link rel="stylesheet" href="{{"css/style.css" | absURL }}">
-</head>
-<body>
+    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}" />
+  </head>
+  <body>
     <header>
       <nav>
         {{ block "prompt" . }}
@@ -19,11 +19,11 @@
     </header>
 
     <main>
-        {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
 
     <footer>
-        <p>EOF</p>
+      <p>EOF</p>
     </footer>
-</body>
+  </body>
 </html>
